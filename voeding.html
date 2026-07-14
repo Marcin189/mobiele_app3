@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Coach - Beste Voeding</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="txt-title">Mijn Fitness Coach</h1>
+        <button id="btn-lang" class="btn-lang" onclick="toggleLanguage()">EN</button>
+    </header>
+
+    <nav>
+        <a href="index.html" id="nav-routine">Routine</a>
+        <a href="macros.html" id="nav-macros">Macro's</a>
+        <a href="voeding.html" id="nav-nutrition">Voeding</a>
+        <a href="progress.html" id="nav-progress">Progressie</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2 id="nutrition-main-title">Gezonde Voedingskeuzes per Macro</h2>
+            <div id="nutrition-container">
+                <!-- Dynamische lijsten per macronutriënt via JS -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/nutrition.js"></script>
+</body>
+</html>

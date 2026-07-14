@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Coach - Macro Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="txt-title">Mijn Fitness Coach</h1>
+        <button id="btn-lang" class="btn-lang" onclick="toggleLanguage()">EN</button>
+    </header>
+
+    <nav>
+        <a href="index.html" id="nav-routine">Routine</a>
+        <a href="macros.html" id="nav-macros">Macro's</a>
+        <a href="nutrition.html" id="nav-nutrition">Voeding</a>
+        <a href="progress.html" id="nav-progress">Progressie</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2 id="macros-title">Voedingswaarden Berekenen</h2>
+            
+            <div class="form-group">
+                <label id="lbl-carbs" for="input-carbs">Koolhydraten (in grammen):</label>
+                <input type="number" id="input-carbs" value="0" oninput="calculateAndSaveMacros()">
+            </div>
+
+            <div class="form-group">
+                <label id="lbl-protein" for="input-protein">Eiwitten (in grammen):</label>
+                <input type="number" id="input-protein" value="0" oninput="calculateAndSaveMacros()">
+            </div>
+
+            <div class="form-group">
+                <label id="lbl-fats" for="input-fats">Vetten (in grammen):</label>
+                <input type="number" id="input-fats" value="0" oninput="calculateAndSaveMacros()">
+            </div>
+
+            <div style="margin-top: 30px; padding: 15px; background: #f8fafc; border-radius: 8px;">
+                <h3 id="lbl-summary-title" style="color: #1f4068;">Totale Energie-inname:</h3>
+                <p id="total-calories-display" style="font-size: 24px; font-weight: bold; color: #e43f5a; margin-top: 5px;">0 kcal</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/macros.js"></script>
+</body>
+</html>

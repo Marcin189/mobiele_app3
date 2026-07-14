@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Coach - Progressie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="txt-title">Mijn Fitness Coach</h1>
+        <button id="btn-lang" class="btn-lang" onclick="toggleLanguage()">EN</button>
+    </header>
+
+    <nav>
+        <a href="index.html" id="nav-routine">Routine</a>
+        <a href="macros.html" id="nav-macros">Macro's</a>
+        <a href="nutrition.html" id="nav-nutrition">Voeding</a>
+        <a href="progress.html" id="nav-progress">Progressie</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <h2 id="progress-title">Voortgang Registreren</h2>
+            
+            <div class="form-group">
+                <label id="lbl-weight" for="input-weight">Huidig Gewicht (kg):</label>
+                <input type="number" id="input-weight" step="0.1" placeholder="Bijv. 78.5">
+            </div>
+
+            <button id="btn-save" class="btn-submit" onclick="submitWeight()">Log Gewicht</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th id="th-date">Datum</th>
+                        <th id="th-weight">Gewicht (kg)</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body-progress">
+                    <!-- Logs verschijnen hier via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/progress.js"></script>
+</body>
+</html>
